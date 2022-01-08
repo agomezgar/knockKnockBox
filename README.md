@@ -25,11 +25,11 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | Pieza | Imagen |
 | --- | --- |
 | Arduino UNO o Arduino Nano con su correspondiente shield | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Arduino-uno-perspective-whitw.jpg/640px-Arduino-uno-perspective-whitw.jpg" width="300"> |
-| Servomotor de posición SG-90 o similar| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Servo_Motor.jpg/581px-Servo_Motor.jpg" > |
-| 2 piezoeléctricos pequeños (las piezas están equipadas para dos grandes o para dos pequeños) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Electromagnetic_buzzer_03.jpg/640px-Electromagnetic_buzzer_03.jpg"> |
-| (Alternativa) 2 piezoeléctricos grandes (las piezas están equipadas para dos grandes o para dos pequeños) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Design_1_To_attach_the_arduino%2C_Piezo_Speaker_and_resistor..jpg/640px-Design_1_To_attach_the_arduino%2C_Piezo_Speaker_and_resistor..jpg"> |
-| (Recomendable) 1 resistencia de 1 megaohmio o similar para proteger al piezo que hará de sensor de golpes | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/1_megaohm_5%25_axial_resistor.jpg"> |
-| 1 diodo RGB de 5 mm (uno normal también vale, pero te dará menos juego, claro) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/RGB_LED.jpg/640px-RGB_LED.jpg"> |
+| Servomotor de posición SG-90 o similar| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Servo_Motor.jpg/581px-Servo_Motor.jpg" width="300"> |
+| 2 piezoeléctricos pequeños (las piezas están equipadas para dos grandes o para dos pequeños) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Electromagnetic_buzzer_03.jpg/640px-Electromagnetic_buzzer_03.jpg" width="300"> |
+| (Alternativa) 2 piezoeléctricos grandes (las piezas están equipadas para dos grandes o para dos pequeños) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Design_1_To_attach_the_arduino%2C_Piezo_Speaker_and_resistor..jpg/640px-Design_1_To_attach_the_arduino%2C_Piezo_Speaker_and_resistor..jpg" width="300"> |
+| (Recomendable) 1 resistencia de 1 megaohmio o similar para proteger al piezo que hará de sensor de golpes | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/1_megaohm_5%25_axial_resistor.jpg" width="300"> |
+| 1 diodo RGB de 5 mm (uno normal también vale, pero te dará menos juego, claro) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/RGB_LED.jpg/640px-RGB_LED.jpg" width="300"> |
 
 ### Principio de funcionamiento
 
