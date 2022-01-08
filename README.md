@@ -11,7 +11,7 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | Pieza | Imagen |
 | --- | --- |
 | Suelo | <img src="./IMAGENES/suelo.png"> |
-| Falso Techo | <img src="./IMAGENES/falsoTecho.png"> |
+| Doble fondo | <img src="./IMAGENES/falsoTecho.png"> |
 | Paredes frontal y trasera (tendrás que imprimir dos veces) | <img src="./IMAGENES/frontalyTrasera.png"> |
 | Pared lateral derecha, o pared lateral activa (llamada así porque aloja el interruptor del portapilas) | <img src="./IMAGENES/lateralActiva.png"> |
 | Pared lateral izquierda, o pared lateral inerte (en contraposición a la denominación de activa) | <img src="./IMAGENES/lateralInerte.png"> |
@@ -35,6 +35,7 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | Imagen | Descripción |
 | --- | --- |
 | <img src="./IMAGENES/montaje1.png" width="600"> | Inserta la Arduino en el suelo de la caja y atornilla el servomotor SG-90 a su soporte. A continuación, encaja dicho soporte en el suelo con el eje del servo apuntando a la pared trasera. Coloca las paredes frontal y trasera tal y como se ve en el dibujo. |
+| <img src="./IMAGENES/montaje2.png" > | Encaja ahora la pieza que hemos llamado "doble fondo" tal y como se ve en la imagen |
 
 ## Principio de funcionamiento
 
