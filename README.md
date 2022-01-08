@@ -24,8 +24,8 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 
 | Pieza | Imagen |
 | --- | --- |
-| Arduino UNO o Arduino Nano con su correspondiente shield | <img src="https://commons.wikimedia.org/wiki/File:Arduino-uno-perspective-whitw.jpg> |
-| Servomotor de posición SG-90 o similar| <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Servo_Motor.jpg> |
+| Arduino UNO o Arduino Nano con su correspondiente shield | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Arduino-uno-perspective-whitw.jpg/640px-Arduino-uno-perspective-whitw.jpg"> |
+| Servomotor de posición SG-90 o similar| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Servo_Motor.jpg/581px-Servo_Motor.jpg" > |
 | 2 piezoeléctricos (las piezas están equipadas para dos grandes o para dos pequeños) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Electromagnetic_buzzer_03.jpg/640px-Electromagnetic_buzzer_03.jpg"> |
 
 ### Principio de funcionamiento
