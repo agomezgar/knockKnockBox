@@ -34,7 +34,7 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 
 | Imagen | Descripción |
 | --- | --- |
-| <img src="./IMAGENES/montaje1.png"> | Inserta la Arduino en el suelo de la caja y atornilla el servomotor SG-90 a su soporte. A continuación, encaja dicho soporte en el suelo con el eje del servo apuntando a la pared trasera. Coloca las paredes frontal y trasera tal y como se ve en el dibujo. |
+| <img src="./IMAGENES/montaje1.png" width="600"> | Inserta la Arduino en el suelo de la caja y atornilla el servomotor SG-90 a su soporte. A continuación, encaja dicho soporte en el suelo con el eje del servo apuntando a la pared trasera. Coloca las paredes frontal y trasera tal y como se ve en el dibujo. |
 
 ## Principio de funcionamiento
 
