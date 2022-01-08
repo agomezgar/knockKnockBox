@@ -11,8 +11,8 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 
 | Imagen | Pieza |
 | --- | --- |
-| Suelo | <img src="./IMAGENES/suelo.png" |
-| Falso Techo | <img src="./IMAGENES/falsoTecho.png" |
+| Suelo | <img src="./IMAGENES/suelo.png"> |
+| Falso Techo | <img src="./IMAGENES/falsoTecho.png"> |
 
 ### Principio de funcionamiento
 
