@@ -13,7 +13,9 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | --- | --- |
 | Suelo | <img src="./IMAGENES/suelo.png"> |
 | Falso Techo | <img src="./IMAGENES/falsoTecho.png"> |
-
+| Paredes frontal y trasera (tendrás que imprimir dos veces) | <img src="./IMAGENES/frontalyTrasera.png"> |
+| Pared lateral derecha, o pared lateral activa (llamada así porque aloja el interruptor del portapilas) | <img src="./IMAGENES/lateralActiva.png"> |
+| Pared lateral izquierda, o pared lateral inerte (en contraposición a la denominación de activa) | <img src="./IMAGENES/lateralInerte.png"> |
 ### Principio de funcionamiento
 
 Para jugar con la **KnockknockBox** sólo hay que golpearla
