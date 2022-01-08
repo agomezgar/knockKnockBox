@@ -1,0 +1,56 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="serial_init" id=":@nOBa1nhcXu}A@)w*+w" x="139" y="28">
+    <field name="pin">0</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="variables_set" id="__`^]DEMcB_JrAKgBhfN" x="154" y="116">
+    <field name="VAR">lectura</field>
+    <value name="VALUE">
+      <block type="inout_analog_read" id="uUhr%Ct$,r+a|Ai/o7kp">
+        <field name="broche">A0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_if" id="ms#xME$2k3h`tX^5huuB">
+        <value name="IF0">
+          <block type="logic_compare" id="Wfc7{=BRbv{b3@R_Ra36">
+            <field name="OP">GTE</field>
+            <value name="A">
+              <block type="variables_get" id="o:Rb3%[dD/[(Mg;*=7;T">
+                <field name="VAR">lectura</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="z.-*Z3-f+*?^)p5etbpO">
+                <field name="NUM">80</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="serial_write_line" id="9TlO%cqM5v/o6)ZQecPM">
+            <value name="CONTENT">
+              <shadow type="text" id=":X-52G*DUJ^Ws5|o/$p?">
+                <field name="TEXT">String</field>
+              </shadow>
+              <block type="variables_get" id="rSylGAz^zja%ZMq;]{r5">
+                <field name="VAR">lectura</field>
+              </block>
+            </value>
+            <next>
+              <block type="base_delay" id="pmPGGj)qfcCqf[=!)i4]">
+                <field name="unite">m</field>
+                <value name="DELAY_TIME">
+                  <shadow type="math_number" id="nh^k,*.{}4/iVT|o]XC_">
+                    <field name="NUM">30</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
