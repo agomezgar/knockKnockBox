@@ -1,12 +1,11 @@
-# Knockknockbox
-## Español
+# Knockknockbox Español
 
 Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la que hemos jugado en tantos centros educativos gracias a los talleres Verkstadt de David Cuartielles
 <p align="center">
 <img src="./IMAGENES/IMG20220108172201.jpg" width="640" height="480" />
 </p>
 
-### Lista de materiales
+## Lista de materiales
 *Impresos en 3D*
 
 | Pieza | Imagen |
@@ -31,7 +30,13 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | (Recomendable) 1 resistencia de 1 megaohmio o similar para proteger al piezo que hará de sensor de golpes | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/1_megaohm_5%25_axial_resistor.jpg" width="300"> |
 | 1 diodo RGB de 5 mm (uno normal también vale, pero te dará menos juego, claro) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/RGB_LED.jpg/640px-RGB_LED.jpg" width="300"> |
 
-### Principio de funcionamiento
+## Instrucciones de montaje
+
+| Imagen | Descripción |
+| --- | --- |
+| <img src="./IMAGENES/montaje1.png"> | Inserta la Arduino en el suelo de la caja y atornilla el servomotor SG-90 a su soporte. A continuación, encaja dicho soporte en el suelo con el eje del servo apuntando a la pared trasera. Coloca las paredes frontal y trasera tal y como se ve en el dibujo. |
+
+## Principio de funcionamiento
 
 Para jugar con la **Knockknockbox** sólo hay que golpearla. El sensor de vibraciones del dispositivo detectará las vibraciones, y de acuerdo a su programa, raaccionará abriendo o cerrando la caja, activando los colores del diodo RGB, o emitiendo sonidos a través del otro piezoeléctrico (***NOTA PARA FRIKIS: Sí, claro que podríamos utilizar un único piezoeléctrico para que realizara las dos funciones, pero eso implica un mayor grado de dificultad para el aficionado medio, además de que de momento su programación con el IDE MasayloBlockly no sería posible con esta configuración... ¡No seas tacaño y gasta dos buzzer!***
 ## English
