@@ -43,6 +43,11 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 ## Principio de funcionamiento
 
 Para jugar con la **Knockknockbox** sólo hay que golpearla. El sensor de vibraciones del dispositivo detectará las vibraciones, y de acuerdo a su programa, raaccionará abriendo o cerrando la caja, activando los colores del diodo RGB, o emitiendo sonidos a través del otro piezoeléctrico (***NOTA PARA FRIKIS: Sí, claro que podríamos utilizar un único piezoeléctrico para que realizara las dos funciones, pero eso implica un mayor grado de dificultad para el aficionado medio, además de que de momento su programación con el IDE MasayloBlockly no sería posible con esta configuración... ¡No seas tacaño y gasta dos buzzer!***
+
+Puedes programar la Knockknockbox como te de la gana. Si respetas el pinout que te proporciono (y, si tienes algún conocimiento de Arduino,no tienes por qué), tendrás un piezoeléctrico como sensor de vibración en la patilla analógica A0, otro más como altavoz en el pin digital 8, y los colores rojo, verde y azul del RGB conectados a las salidas digitales 3, 5 y 6 (no sólo por capricho, que también, sino por poder utilizar la característica PWM de estos pines).
+<p align="center">
+<image src="./PINOUT/esquemaConexionado.png" width="600">
+</p>
 ## English
 
 A redesign of the mytic #KnockKnockBox of the Verstakdt project by David Cuartielles
