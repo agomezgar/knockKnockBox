@@ -67,7 +67,7 @@ De todos modos, en la carpeta [código](./codigo/) os he dejado un programa de c
 Dicho programa coloca en 0º el servomotor (correspondiente a tapa cerrada, de modo que puedas colocar el horn del servo tal y como te indicaba antes y lo ates a la tapa en tensión) y espera a obtener un valor mayor de 80 (umbral relativamente pequeño, pero puedes cambiarlo) para devolver por el puerto serie el valor medido. Aquí tienes un ejemplo de mi propia calibración:
 
   <p align="center">
-  <img src="./IMAGENES/calibracionPuertoSerie.png" width="600">
+  <img src="./IMAGENES/calibracionPuertoserie.png" width="600">
     </p>
     
 Como ves, en mi caso devuelve enseguida valores muy altos, así que para evitar falsas lecturas suelo utilizar umbrales del orden de 512 o mayores.
