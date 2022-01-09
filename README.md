@@ -111,7 +111,7 @@ En cuanto a la función **contar** (necesitaréis activar el bloque de opciones 
   <img src="./IMAGENES/primerProgramaB.png" width="600">
     </p>
     
-¿A que mola?. Os he dejado en la carpeta [codigo](./codigos/) este primer programa para que lo probéis por vuestra cuenta.
+¿A que mola?. Os he dejado en la carpeta [codigo](./codigo/) este primer programa para que lo probéis por vuestra cuenta.
 ## English
 
 A redesign of the mytic #KnockKnockBox of the Verstakdt project by David Cuartielles
