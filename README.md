@@ -40,14 +40,31 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | <img src="./IMAGENES/montaje3.png" width="600"> | Vamos rematando. Ahora toca colocar las paredes laterales junto con la tapa. |
 | <img src="./IMAGENES/montaje4.png" width="600"> | Pon los pasadores para fijar todas las paredes. Ya casi tienes la Knockknockbox. |
 | <img src="./IMAGENES/servoTapa.jpg" width="600"> |Por último, quita un momento de nuevo la pared trasera y pon el servo a 0º (si no sabes cómo, puedes utilizar [el programa de calibración que tienes disponible aquí para MasayloBlockly](./codigo/MasayloBlockly/calibracionSensorVibracion/calibracionKnockknockbox.bloc) [y aquí para la IDE de Arduino](./codigo/Arduino/calibracionKnockknockbox/calibracionKnockknockbox.ino)) y coloca uno de los horns que vienen con el servo. Con un poco de hilo de cobre o náilon, ata un extremo de este "cuerno" a la tapa. Vuelve a cerrar la Knockknockbox con la pared que habías quitado. ¡Bueno!. ¡Pues ya estaría!  |
+
 ## Principio de funcionamiento
 
 Para jugar con la **Knockknockbox** sólo hay que golpearla. El sensor de vibraciones del dispositivo detectará las vibraciones, y de acuerdo a su programa, raaccionará abriendo o cerrando la caja, activando los colores del diodo RGB, o emitiendo sonidos a través del otro piezoeléctrico (***NOTA PARA FRIKIS: Sí, claro que podríamos utilizar un único piezoeléctrico para que realizara las dos funciones, pero eso implica un mayor grado de dificultad para el aficionado medio, además de que de momento su programación con el IDE MasayloBlockly no sería posible con esta configuración... ¡No seas tacaño y gasta dos buzzer!***
 
-Puedes programar la Knockknockbox como te de la gana. Si respetas el pinout que te proporciono (y, si tienes algún conocimiento de Arduino,no tienes por qué), tendrás un piezoeléctrico como sensor de vibración en la patilla analógica A0, otro más como altavoz en el pin digital 8, y los colores rojo, verde y azul del RGB conectados a las salidas digitales 3, 5 y 6 (no sólo por capricho, que también, sino por poder utilizar la característica PWM de estos pines).
+Puedes programar la Knockknockbox como te de la gana. Si respetas el pinout que te proporciono (y, si tienes algún conocimiento de Arduino,no tienes por qué), tendrás un piezoeléctrico como sensor de vibración en la patilla analógica A0, otro más como altavoz en el pin digital 8, y los colores rojo, verde y azul del RGB conectados a las salidas digitales 3, 5 y 6 (no sólo por capricho, que también, sino por poder utilizar la característica PWM de estos pines). El servo que abre la caja está conectado a la patilla 9.
+
 <p align="center">
 <image src="./PINOUT/esquemaConexionado.png" width="600">
 </p>
+  
+##Calibrando la Knockknockbox
+
+Para jugar con la Knockknockbox sólo necesitas saber dos cosas: el umbral de detección de golpe (además del tiempo de rebote) y la posición ideal del servo para abrir la caja.
+
+### Umbral de detección del golpe
+  
+¿Qué valor, entre 0 y 1023, debe detectar el pin analógico A0 de la Arduino para decidir si realmente se ha dado un golpe en la pared donde tenemos el sensor?. Esto puede depender mucho del tipo de piezoeléctrico que estéis usando. En mi caso, suelo utilizar un valor intermedio como 512, y desde ahí voy subiendo o bajando en diversas pruebas de ensayo y error.
+  
+De todos modos, en la carpeta [código](./codigo/) os he dejado un programa de calibración. En MasayloBlockly es así:
+  <p align="center">
+  <img src="./IMAGENES/calibracionMasayloBlockly.png" width="600">
+    </p>
+ 
+
 ## English
 
 A redesign of the mytic #KnockKnockBox of the Verstakdt project by David Cuartielles
