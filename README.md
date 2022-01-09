@@ -96,15 +96,22 @@ Voy a dejarte sólamente un ejemplo que te permitirá familiarizarte con la Knoc
     - *2* encenderá el color verde (pin 5) durante 1 segundo.
     - *3* encenderá el color azul (pin 6) durante 1 segundo.
     - *4* hará que el altavoz (pin 8) toque la nota *Do*
-    - "5* provocará la nota *Re*
-    - "6* tocará la nota *Mi* y pondrá la variable *contador* a 0 para reiniciar el bucle.
+    - *5* provocará la nota *Re*
+    - *6* tocará la nota *Mi* y pondrá la variable *contador* a 0 para reiniciar el bucle.
 
 El programa principal es sencillo:
 
   <p align="center">
   <img src="./IMAGENES/primerProgramaA.png" width="600">
     </p>
+    
+En cuanto a la función **contar** (necesitaréis activar el bloque de opciones ***FUNCIONES*** de MasayloBlockly), si bien algo más larga (lo he hecho así para que resulte más sencillo de entender al neófito), tampoco es difícil de entender.
 
+  <p align="center">
+  <img src="./IMAGENES/primerProgramaB.png" width="600">
+    </p>
+    
+¿A que mola?. Os he dejado en la carpeta [codigo](./codigos/) este primer programa para que lo probéis por vuestra cuenta.
 ## English
 
 A redesign of the mytic #KnockKnockBox of the Verstakdt project by David Cuartielles
