@@ -86,7 +86,24 @@ A este respecto, sólo puedo proponerte que vayas experimentando con diversos va
   <img src="./IMAGENES/calibracionServo.png" width="600">
     </p>
     
-    
+## Mi primer programa
+
+Voy a dejarte sólamente un ejemplo que te permitirá familiarizarte con la Knockknockbox y sus posibilidades. Dicho programa tiene la siguientes características:
+
+- Inicializa una variable de tipo entero llamada *contador* que empieza partiendo de 0. 
+- El sensor de vibración detecta cada vez que damos un golpe. Espera 30 milisegundos (puedes cambiar el tiempo de rebote) y llama a la función **contar**, que irá aumentando el valor de *contador* de uno en uno. Según el valor de *contador*, cada vez que llamemos a **contar** sucederá una cosa distinta:
+    - *1* encenderá el color rojo (pin 3) durante 1 segundo.
+    - *2* encenderá el color verde (pin 5) durante 1 segundo.
+    - *3* encenderá el color azul (pin 6) durante 1 segundo.
+    - *4* hará que el altavoz (pin 8) toque la nota *Do*
+    - "5* provocará la nota *Re*
+    - "6* tocará la nota *Mi* y pondrá la variable *contador* a 0 para reiniciar el bucle.
+
+El programa principal es sencillo:
+
+  <p align="center">
+  <img src="./IMAGENES/primerProgramaA.png" width="600">
+    </p>
 
 ## English
 
