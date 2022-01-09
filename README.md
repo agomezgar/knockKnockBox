@@ -35,10 +35,11 @@ Un rediseño (un homenaje, si lo prefieres) de la mítica #KnockKnockBox con la 
 | Imagen | Descripción |
 | --- | --- |
 | <img src="./IMAGENES/montaje1.png" width="600"> | Inserta la Arduino en el suelo de la caja y atornilla el servomotor SG-90 a su soporte. A continuación, encaja dicho soporte en el suelo con el eje del servo apuntando a la pared trasera. Coloca las paredes frontal y trasera tal y como se ve en el dibujo. |
-| <img src="./IMAGENES/montaje2.png" > | Encaja ahora la pieza que hemos llamado "doble fondo" tal y como se ve en la imagen. |
-| <img src="./PINOUT/esquemaConexion_bb.png" > | Ha llegado el momento de realizar el conexionado. Encaja los dos piezos que tengas en la pared que quieras, coloca el interruptor y el LED en la pared lateral derecha y conecta de acuerdo a este esquema. |
-| <img src="./IMAGENES/montaje3.png" > | Vamos rematando. Ahora toca colocar las paredes laterales junto con la tapa. |
-| <img src="./IMAGENES/montaje4.png" > | Pon los pasadores para fijar todas las paredes. Ya tienes la Knockknockbox. |
+| <img src="./IMAGENES/montaje2.png" width="600"> | Encaja ahora la pieza que hemos llamado "doble fondo" tal y como se ve en la imagen. |
+| <img src="./PINOUT/esquemaConexion_bb.png" width="600"> | Ha llegado el momento de realizar el conexionado. Encaja los dos piezos que tengas en la pared que quieras, coloca el interruptor y el LED en la pared lateral derecha y conecta de acuerdo a este esquema. |
+| <img src="./IMAGENES/montaje3.png" width="600"> | Vamos rematando. Ahora toca colocar las paredes laterales junto con la tapa. |
+| <img src="./IMAGENES/montaje4.png" width="600"> | Pon los pasadores para fijar todas las paredes. Ya casi tienes la Knockknockbox. |
+| <img src="./IMAGENES/servoTapa.jpg" width="600"> |Por último, pon el servo a 0º (si no sabes cómo, puedes utilizar [el programa de calibración que tienes disponible aquí para MasayloBlockly](./codigo/MasayloBlockly/calibracionSensorVibracion/calibracionKnockknockbox.bloc)[y aquí para la IDE de Arduino](./codigo/Arduino/calibracionKnockknockbox/calibracionKnockknockbox.ino)) y coloca uno de los horns que vienen con el servo. Con un poco de hilo de cobre o náilon, ata un extremo de este "cuerno" a la tapa. ¡Bueno!. ¡Pues ya estaría!  |
 ## Principio de funcionamiento
 
 Para jugar con la **Knockknockbox** sólo hay que golpearla. El sensor de vibraciones del dispositivo detectará las vibraciones, y de acuerdo a su programa, raaccionará abriendo o cerrando la caja, activando los colores del diodo RGB, o emitiendo sonidos a través del otro piezoeléctrico (***NOTA PARA FRIKIS: Sí, claro que podríamos utilizar un único piezoeléctrico para que realizara las dos funciones, pero eso implica un mayor grado de dificultad para el aficionado medio, además de que de momento su programación con el IDE MasayloBlockly no sería posible con esta configuración... ¡No seas tacaño y gasta dos buzzer!***
