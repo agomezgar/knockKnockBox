@@ -71,6 +71,10 @@ Dicho programa coloca en 0º el servomotor (correspondiente a tapa cerrada, de m
     </p>
     
 Como ves, en mi caso devuelve enseguida valores muy altos, así que para evitar falsas lecturas suelo utilizar umbrales del orden de 512 o mayores.
+
+### Tiempo de rebote
+
+Si has observado con atención el programa que te proponía antes, habrás notado que después de detectar un golpe, he establecido un pequeño retraso del orden de 30 milisegundos. Esto es debido porque poco después de recibir la vibración, el piezoeléctrico suele experimentar cierta realimentación, lo que hace que durante algunos milisegundos se siga enviando una falsa señal al pin analógico, lo que puede generar falsas lecturas. Por eso, *SIEMPRE* debes establecer un pequeño retraso (delay) justo después de que el programa decida que se ha recibido un golpe. Esto es lo que se conoce como *tiempo de rebote*. De nuevo, deberás decidir tú qué valor es el adecuado para que tu Knockknockbox no haga falsas lecturas. En mi caso, suelo trabajar entre 30 y 40 ms.
     
 
 ## English
