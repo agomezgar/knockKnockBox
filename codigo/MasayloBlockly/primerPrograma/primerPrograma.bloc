@@ -1,0 +1,330 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="variables_set_init" id="aUbF]|FPGLQjP$7}P7lg" x="-150" y="29">
+    <field name="VAR">contador</field>
+    <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+    <value name="VALUE">
+      <block type="math_number" id="1^[#3n{^.Tt6E~D}/Z,#">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_if" id="`I$*s];}G@t3u^/)x7bJ">
+        <value name="IF0">
+          <block type="logic_compare" id="7`tCA_dLCtrS,E!1g)?N">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="inout_analog_read" id="a8]2{ByY8{LHgXxD;e:;">
+                <field name="broche">A0</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="ecCR8wCBC-!{Zt!H[^Q,">
+                <field name="NUM">512</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="base_delay" id=".|O{O~#2yJn^DX~j6|Mz">
+            <field name="unite">s</field>
+            <value name="DELAY_TIME">
+              <shadow type="math_number" id=")%CU-/[;`wz`e=^;]Z:W">
+                <field name="NUM">0.1</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="%X./|oz=^+f+uYG)=Vpe">
+                <mutation name="contar"></mutation>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_defnoreturn" id="w|j%Hgw4Q(^Sof,8i95g" x="366" y="18">
+    <field name="NAME">contar</field>
+    <statement name="STACK">
+      <block type="math_change" id="7y]`P*%VjsPpe!rp4Bt.">
+        <field name="VAR">contador</field>
+        <value name="DELTA">
+          <block type="math_number" id="`rzq+d34r_`eLWsAM`0K">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="(J#my$Bq%feKLSGIn?cs">
+            <value name="IF0">
+              <block type="logic_compare" id="a9K.3[/Kwf[b6Y_oMf)u">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="AKbQsPXCs-vZ0pb5?1-S">
+                    <field name="VAR">contador</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="IciT[WOq4}W1WxIORmhq">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="inout_digital_write" id="8NfZQo%PUe9S[Tnc$s}~">
+                <value name="PIN">
+                  <shadow type="math_number" id="R5T9~lDL$eB)qokfb0?F">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+                <value name="STAT">
+                  <block type="inout_onoff" id="2~|zXo{5[LfD*%4ZqbxS">
+                    <field name="BOOL">HIGH</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="base_delay" id="!Fl-Fp5^U(gHGM35M-DJ">
+                    <field name="unite">s</field>
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number" id="`YjUQd3_?1ajVsCi=b6s">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="inout_digital_write" id="{l{P7Y#%l8748W}n~EVa">
+                        <value name="PIN">
+                          <shadow type="math_number" id="1K6P/@xv5U#sIPP#Lh(;">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                        <value name="STAT">
+                          <block type="inout_onoff" id="^P8G6]:xh_g=W.M_~23h">
+                            <field name="BOOL">LOW</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="QetImCD7.o{;al/B3UYS">
+                <value name="IF0">
+                  <block type="logic_compare" id="gyrkZcKVO!I^B|}?,?~f">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="JTX/{-aTCdY6yKgY%-YM">
+                        <field name="VAR">contador</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="f=5d.),ZS$7Fe~4~H5!2">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="inout_digital_write" id="?qcvPILkxvMv0H+bX{$U">
+                    <value name="PIN">
+                      <shadow type="math_number" id="2XF}s@@r5c+1JNf[(|:X">
+                        <field name="NUM">5</field>
+                      </shadow>
+                    </value>
+                    <value name="STAT">
+                      <block type="inout_onoff" id="Z`w~+lok#^b^f8G[B+$:">
+                        <field name="BOOL">HIGH</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="base_delay" id="Wyhl`KPwS~C_=_~H`=iM">
+                        <field name="unite">s</field>
+                        <value name="DELAY_TIME">
+                          <shadow type="math_number" id="x*54}jt(`wEHU}.krVkK">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="inout_digital_write" id="rRN!G:jaVD?#gDlAE@J?">
+                            <value name="PIN">
+                              <shadow type="math_number" id="]w8~yM`b2VB-k8sWw3us">
+                                <field name="NUM">5</field>
+                              </shadow>
+                            </value>
+                            <value name="STAT">
+                              <block type="inout_onoff" id="!A{|sI_=(3F^Hj2o`J|]">
+                                <field name="BOOL">LOW</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id=")x:nr[j@g|5oO^7C?Y{{">
+                    <value name="IF0">
+                      <block type="logic_compare" id="N:u_}YEg*zHa]3x_/3fG">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="3avRD0Y!UNKOUgm3.MT]">
+                            <field name="VAR">contador</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="Bn3%EEbIzpt6!SNg#5qa">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="inout_digital_write" id="v,uQPu6o=t;4WsS:5W;V">
+                        <value name="PIN">
+                          <shadow type="math_number" id="dGR/`64(W:/rXzB}MOBm">
+                            <field name="NUM">6</field>
+                          </shadow>
+                        </value>
+                        <value name="STAT">
+                          <block type="inout_onoff" id="|K_NMEujm*s5%Ak`G[Y^">
+                            <field name="BOOL">HIGH</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="base_delay" id="7H^zTLL:Wwk;!36aF%{K">
+                            <field name="unite">s</field>
+                            <value name="DELAY_TIME">
+                              <shadow type="math_number" id="tyAy1nt`=o5Z{n@K*cd3">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="inout_digital_write" id="?D?W!No6=Gb5QafVw54I">
+                                <value name="PIN">
+                                  <shadow type="math_number" id=";IC,9-Dzv17|_!#?Br$;">
+                                    <field name="NUM">6</field>
+                                  </shadow>
+                                </value>
+                                <value name="STAT">
+                                  <block type="inout_onoff" id="|;,X7J7DZ0N4dziI!5qy">
+                                    <field name="BOOL">LOW</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="#km}XE5p:Hn2|L_*_A_K">
+                        <value name="IF0">
+                          <block type="logic_compare" id="+^!#e|dDMZTf%Bq8-OPq">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="variables_get" id="K*X*r+_e.-Q8}Sx4n{ab">
+                                <field name="VAR">contador</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="h/Ivv=8WvO11p4aph66c">
+                                <field name="NUM">4</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="play" id="ED*+!T`/v-,Wn`=YR0L:">
+                            <field name="note">261</field>
+                            <field name="tempo">250</field>
+                            <value name="PIN">
+                              <shadow type="math_number" id="q:s*izOS5iQDOv{cg1Z7">
+                                <field name="NUM">8</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="Gq30ufs*)2m8=bb5KO?i">
+                            <value name="IF0">
+                              <block type="logic_compare" id="NeL]-4?|ia:e%y`.S?^m">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="6!%N_HD@MXdoY=!@Q[e|">
+                                    <field name="VAR">contador</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="^oiQDQP5,%KfOuwR5nK?">
+                                    <field name="NUM">5</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="play" id="QvhIHL8E7f{hYL]^U^=W">
+                                <field name="note">293</field>
+                                <field name="tempo">250</field>
+                                <value name="PIN">
+                                  <shadow type="math_number" id="AlA/6BYA~@S1YNc~4r`z">
+                                    <field name="NUM">8</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="R=sNKqK5.(Iiu4td8D0:">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="cEr=cio1ORAaEuNM`)Mx">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="u5j~*he;$NczL0)}xl#,">
+                                        <field name="VAR">contador</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="mI02+Z7A0D,JgQDXuLKq">
+                                        <field name="NUM">6</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="play" id="GvO7;Mb/L1kfU(JFl`.8">
+                                    <field name="note">329</field>
+                                    <field name="tempo">250</field>
+                                    <value name="PIN">
+                                      <shadow type="math_number" id="/lwMheXr9eRHxB%@Pw9#">
+                                        <field name="NUM">8</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="DI2|[Yz2s@H-bf{]yLsn">
+                                        <field name="VAR">contador</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="rrD4nX%)#7P%zzX]6xyy">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
